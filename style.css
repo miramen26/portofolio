@@ -3,10 +3,18 @@ section {
   padding-top: 6rem;
 }
 
+/* Efek Glassmorphism Navbar */
+.glass-navbar {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(26, 26, 64, 0.3)); !important /* Gradien transparan */
+  backdrop-filter: blur(10px); /* Efek kaca buram */
+  -webkit-backdrop-filter: blur(10px); /* Efek kaca buram untuk Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Garis bawah tipis */
+}
+
 .jumbotron {
   padding-top: 5rem;
   background-color: #0c002e;
-  background-image: url(img/background.jpg);
+  background-image: url(img/);
 }
 
 #projects {
