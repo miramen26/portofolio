@@ -36,7 +36,7 @@
   </nav>
 <!-- /Header -->
 <!-- Welcome Screen -->
-<div id="welcome-screen" class="text-light">
+<div id="welcome-screen" class="container-fluid text-light">
   <div class="text-center">
     <h1 class="display-4 fw-bold">My Portofolio</h1>
     <p class="lead">We're glad to have you here.</p>
@@ -268,6 +268,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>// Toggle between light and dark mode
+      const toggleButton = document.getElementById('mode-toggle');
+      toggleButton.addEventListener('click', () => {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+        toggleButton.textContent = body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+      });
     </script>
   </body>
 </html>
