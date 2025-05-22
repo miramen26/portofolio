@@ -12,6 +12,19 @@ img {
   word-wrap: break-word;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #16213e;
+  padding: 20px;
+  text-align: center;
+}
+
 section {
   padding-top: 6rem;
 }
