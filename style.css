@@ -3,7 +3,6 @@ section {
   padding-top: 6rem;
 }
 #welcome-screen {
-  position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(44, 62, 80, 1.4); /* Semi-transparent dark background */
   z-index: 1050; /* above everything */
