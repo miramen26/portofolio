@@ -35,125 +35,145 @@
     </div>
   </nav>
 <!-- /Header -->
-<!-- Hero Body -->
-<div class="jumbotron container-fluid">
-  <div class="row">
-      <div class="col-sm-6 mb-3 text-center">
-        <img src="img/formal.png" alt="Hamzah Ash" class="rounded-circle img-thumbnail">
-        <h1 class="display-4" style="color: aliceblue;">Hamzah Ash</h1>
-        <p class="lead" style="color: aliceblue;">Muhammad Hamzah Ash Shiddieqy</p>
-      </div>
-      
-      <div class="col-sm-6 mb-3 text-light container-lg">
-        <h2 class="p-3">Hi, saya mahasiswa Manajemen</h2>
-        <p class="text-start fs-6 lh-sm" style="font-weight: 400; color: aliceblue;">Saya seorang mahasiswa program studi manajemen yang memiliki keterampilan tinggi dalam komputasi dan analisis data. Saya merupakan pribadi yang gemar mempelajari hal baru dan cepat beradaptasi dan terbuka terhadap pembelajaran baru dengan fokus pada administrasi dan keuangan.</p>
-        <p class="text-start fs-6 lh-sm" style="font-weight: 400; color: aliceblue;">Saya terbiasa dengan pengoperasian komputer dan program Ms. Office (Excel,Word, Powerpoint) dan memiliki sertifikat kemampuan skill Ms. Office (Word,Excel,Powerpoint) serta sertifikat juara 1 lomba "Fast Typing AIKARI MATSURI III" Se-JABODETABEK, skill ini dapat membantu pekerjaan yang menggunakan komputer dan Ms. Office bisa terselesaikan secara efisien dan tepat waktu.</p>
-      </div>
+<!-- Welcome Screen -->
+<div id="welcome-screen" class="text-light">
+  <div class="text-center">
+    <h1 class="display-4 fw-bold">My Portofolio</h1>
+    <p class="lead">We're glad to have you here.</p>
+    <p style="text-underline-offset: 2px;">Last Updated 22/05/2025</p>
   </div>
 </div>
+<!-- // Welcome Screen -->
+<script>
+  // After 3 seconds fade out welcome, then show main content
+  setTimeout(() => {
+    const welcome = document.getElementById('welcome-screen');
+    welcome.style.opacity = '0';
+    setTimeout(() => {
+      welcome.style.display = 'none';
+      const main = document.getElementById('main-content');
+      main.style.display = 'block';
+    }, 800);
+  }, 3000);
+</script>
+  <!-- Hero Body -->
+  <div class="jumbotron container-fluid">
+    <div class="row">
+        <div div class="col-sm-6 mb-3 text-center">
+          <img src="img/formal.png" alt="Hamzah Ash" class="rounded-circle img-thumbnail">
+          <h1 class="display-4" style="color: aliceblue;">Hamzah Ash</h1>
+          <p class="lead" style="color: aliceblue;">Muhammad Hamzah Ash Shiddieqy</p>
+        </div>
+      
+        <div class="col-sm-6 mb-3 text-light container-lg">
+          <h2 class="p-3">Hi, saya mahasiswa Manajemen</h2>
+          <p class="text-start fs-6 lh-sm" style="font-weight: 400; color: aliceblue;">Saya seorang mahasiswa program studi manajemen yang memiliki keterampilan tinggi dalam komputasi dan analisis data. Saya merupakan pribadi yang gemar mempelajari hal baru dan cepat beradaptasi dan terbuka terhadap pembelajaran baru dengan fokus pada administrasi dan keuangan.</p>
+          <p class="text-start fs-6 lh-sm" style="font-weight: 400; color: aliceblue;">Saya terbiasa dengan pengoperasian komputer dan program Ms. Office (Excel,Word, Powerpoint) dan memiliki sertifikat kemampuan skill Ms. Office (Word,Excel,Powerpoint) serta sertifikat juara 1 lomba "Fast Typing AIKARI MATSURI III" Se-JABODETABEK, skill ini dapat membantu pekerjaan yang menggunakan komputer dan Ms. Office bisa terselesaikan secara efisien dan tepat waktu.</p>
+        </div>
+    </div>
+  </div>
 <!-- /Hero Body -->
 <!-- Project -->
-<div id="projects">
-  <div class="container">
-    <div class="row text-center id="organisasi"">
-      <div id="organisasi" class="border2" data-aos="flip-up" data-aos-duration="400">
-        <h2 style="margin-top: 2em; margin-bottom: 2em;">
-            <span data-aos="fade-down" data-aos-delay="200" style="background-color: none;">Organisasi</span>
-        </h2>
+  <div id="projects">
+    <div class="container">
+      <div class="row text-center id="organisasi"">
+        <div id="organisasi" class="border2" data-aos="flip-up" data-aos-duration="400">
+          <h2 style="margin-top: 2em; margin-bottom: 2em;">
+              <span data-aos="fade-down" data-aos-delay="200" style="background-color: none;">Organisasi</span>
+          </h2>
+          </div>
+     </div>
+      <div class="row text-center">
+        <div class="col-md-6 text-light;">
+          <img class="img-thumbnail" data-aos="flip-down" src="img/KSPM.JPG" style="width: 400px;">
+          <h3 style="color: aliceblue;">Ketua Divisi Research KSPM</h3>
+          <p class="text-light">Kelompok Studi Pasar Modal</p>
+        </div>
+        <div class="col-md-6" data-aos="flip-up" style="text-align: left;">
+          <div class="list-group">
+            <a class="list-group-item " aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Ketua Divisi Research Pasar Modal</h5>
+                <small>2024 - Sekarang</small>
+              </div>
+              <p class="mb-1">Aktif dalam kegiatan organisasi seperti: Rapat Studi, Menyiapkan materi pembelajaran investasi, dan mengevaluasi informasi terkini seputar perekonomian dan investasi.
+              </p>
+            </a>
+            <a class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Staff Logistik Acara Musyawarah Besar</h5>
+                <small class="text-muted">24/11/2024</small>
+              </div>
+              <p class="mb-1">Bertanggung jawab atas perencanaan, pengadaan dan distribusi perlengkapan acara serta memastikan semua kebutuhan logistik tersedia dan berfungsi dengan baik. Mengelola inventaris barang, menangani kendala teknis selama acara, serta menyusun laporan logistik untuk evaluasi dan dokumentasi.</p>
+            </a>
+            <a  class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Anggota Terpilih Visit ASEAN secretariat</h5>
+                <small class="text-muted">02/12/2024</small>
+              </div>
+              <p class="mb-1">Dalam forum ini saya turut berkontribusi dengan pemahaman terkait dinamika pasar modal dan kebijakan ekonomi sekaligus memperluas wawasan tentang peran strategis ASEAN dalam menarik investor asing tahun 2024 dan kedepannya (2025) dan mendorong pertumbuhan ekonomi berkelanjutan.</p>
+            </a>
+          </div>
         </div>
     </div>
-    <div class="row text-center">
-      <div class="col-md-6 text-light;">
-        <img class="img-thumbnail" data-aos="flip-down" src="img/KSPM.JPG" style="width: 400px;">
-        <h3 style="color: aliceblue;">Ketua Divisi Research KSPM</h3>
-        <p class="text-light">Kelompok Studi Pasar Modal</p>
-      </div>
-      <div class="col-md-6" data-aos="flip-up" style="text-align: left;">
-        <div class="list-group">
-          <a class="list-group-item " aria-current="true">
-          <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Ketua Divisi Research Pasar Modal</h5>
-              <small>2024 - Sekarang</small>
-            </div>
-            <p class="mb-1">Aktif dalam kegiatan organisasi seperti: Rapat Studi, Menyiapkan materi pembelajaran investasi, dan mengevaluasi informasi terkini seputar perekonomian dan investasi.
-            </p>
-          </a>
-          <a class="list-group-item">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Staff Logistik Acara Musyawarah Besar</h5>
-              <small class="text-muted">24/11/2024</small>
-            </div>
-            <p class="mb-1">Bertanggung jawab atas perencanaan, pengadaan dan distribusi perlengkapan acara serta memastikan semua kebutuhan logistik tersedia dan berfungsi dengan baik. Mengelola inventaris barang, menangani kendala teknis selama acara, serta menyusun laporan logistik untuk evaluasi dan dokumentasi.</p>
-          </a>
-          <a  class="list-group-item">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Anggota Terpilih Visit ASEAN secretariat</h5>
-              <small class="text-muted">02/12/2024</small>
-            </div>
-            <p class="mb-1">Dalam forum ini saya turut berkontribusi dengan pemahaman terkait dinamika pasar modal dan kebijakan ekonomi sekaligus memperluas wawasan tentang peran strategis ASEAN dalam menarik investor asing tahun 2024 dan kedepannya (2025) dan mendorong pertumbuhan ekonomi berkelanjutan.</p>
-          </a>
-        </div>
-      </div>
-  </div>
-    <div class="row text-center">
-      <div id="sertifikat" class="border2" data-aos="flip-up" data-aos-duration="400">
-        <h2 style="margin-top: 2em; margin-bottom: 2em;">
+      <div class="row text-center">
+        <div id="sertifikat" class="border2" data-aos="flip-up" data-aos-duration="400">
+          <h2 style="margin-top: 2em; margin-bottom: 2em;">
             <span data-aos="fade-down" data-aos-delay="200" style="background-color: none;">Sertifikat</span>
-        </h2>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 mb-3">
-        <div class="card" data-aos="fade-down-right">
-          <div class="hoverimgtxt">
-            <img src="img/Sertifikat_Aikari-Matsuri.jpg" class="Aikari_Matsuri card-img-top">
-            <h2 class="hvrtxt">Mengetik Cepat</h2>
+          </h2>
           </div>
-            <div class="card-body">
-              <p class="card-text" style="text-align: center; font-family:lucida console; text-shadow: gray; font-weight: bold; font-size: 20px;">
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mb-3">
+          <div class="card" data-aos="fade-down-right">
+            <div class="hoverimgtxt">
+              <img src="img/Sertifikat_Aikari-Matsuri.jpg" class="Aikari_Matsuri card-img-top">
+              <h2 class="hvrtxt">Mengetik Cepat</h2>
+            </div>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center; font-family:lucida console; text-shadow: gray; font-weight: bold; font-size: 20px;">
                 Fast Typing</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6 mb-3">
-        <div class="card" data-aos="fade-down-left">
-          <div class="hoverimgtxt">
-            <img src="img/Sertifikat-Ms_Office.jpg" class="card-img-top">
-            <h2>Ms. Office (Excel)</h2>
-          </div>
-            <div class="card-body">
-              <p class="card-text" style="text-align: center; font-family:lucida console; text-shadow: gray; font-weight: bold; font-size: 20px;">
+        <div class="col-sm-6 mb-3">
+          <div class="card" data-aos="fade-down-left">
+            <div class="hoverimgtxt">
+              <img src="img/Sertifikat-Ms_Office.jpg" class="card-img-top">
+              <h2>Ms. Office (Excel)</h2>
+            </div>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center; font-family:lucida console; text-shadow: gray; font-weight: bold; font-size: 20px;">
                 Ms. Office (Word,Excel,Powerpoint)</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6 mb-3">
-        <div class="card" data-aos="fade-up-right">
-          <div class="hoverimgtxt">
-            <img src="img/Sertifikat-Lomba-Animasi.jpg" class="card-img-top">
-            <h2>Animasi</h2>
-          </div>
-            <div class="card-body">
+        <div class="col-sm-6 mb-3">
+          <div class="card" data-aos="fade-up-right">
+            <div class="hoverimgtxt">
+              <img src="img/Sertifikat-Lomba-Animasi.jpg" class="card-img-top">
+              <h2>Animasi</h2>
+            </div>
+              <div class="card-body">
               <p class="card-text" style="text-align: center; font-family:lucida console; text-shadow: gray; font-weight: bold; font-size: 20px;">
                 Animasi</p>
-          </div>
             </div>
-      </div>
-      <div class="col-sm-6 mb-3">
-        <div class="card" data-aos="fade-up-left">
-          <div class="hoverimgtxt">
-            <img src="img/Sertifikat-Desain-Grafis.jpg" class="card-img-top">
-            <h2>Photoshop, Coreldraw</h2>
-          </div>
-            <div class="card-body">
-              <p class="card-text" style="text-align: center; font-family:lucida console; text-shadow: gray; font-weight: bold; font-size: 20px;">
-                Desain Grafis</p>
-          </div>
-            </div>
-      </div>
+              </div>
         </div>
-  </div>
-</div>
+        <div class="col-sm-6 mb-3">
+          <div class="card" data-aos="fade-up-left">
+            <div class="hoverimgtxt">
+              <img src="img/Sertifikat-Desain-Grafis.jpg" class="card-img-top">
+              <h2>Photoshop, Coreldraw</h2>
+            </div>
+              <div class="card-body">
+                <p class="card-text" style="text-align: center; font-family:lucida console; text-shadow: gray; font-weight: bold; font-size: 20px;">
+                Desain Grafis</p>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>  
   <div class="penjelasan container-fluid float-start text-light"> 
     <div class="border3" data-aos="flip-up" data-aos-duration="400">
       <h2 style="margin-top: 1em; margin-bottom: 1em;;">
@@ -168,7 +188,7 @@
             <p style="-webkit-text-stroke: 0.1px Black;">Sertifikat ini didapat melalui perlombaan ketik cepat atau "Fast Typing" Tingkat Se-Jabodetabek, dalam lomba ini saya mendapatkan juara 1. Untuk sistem perlombaan ini Terdapat 3 bahasa yang digunakan untuk di perlombakan yaitu bahasa Indonesia, Bahasa Inggris dan Bahasa Jepang. Perlombaan ini dinilai berdasarkan tingkat kecepatan ketik WPM/KPM (Word Per Minute/Kata Per Menit) dan akurasi pengetikan.</p>
           </div>
       </div>
-    </div>
+  </div>
     <div class="penjelasan1 container-fluid float-start text-light"> 
       <div class="border3" data-aos="flip-up" data-aos-duration="400">
         <h2 style="margin-top: 1em; margin-bottom: 1em;"></h2>
@@ -209,11 +229,11 @@
       </div>
     </strong></strong>
     </div>
-<!-- /Project -->
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
+  <!-- /Project -->
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
     <!-- Section: Social media -->
     <div id="lfooter">
     <section class="mb-1 mt-1">
@@ -231,18 +251,18 @@
       </a>
     </section>
     <!-- Section: Social media -->
-  </div>
-</div>
+    </div>
+    </div>
   <!-- Grid container -->
 
   <!-- Copyright -->
-<div id="contact">
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    <a class="text-white" href="#" style="text-decoration: none;">© 2023 Hamzah Ash, All Rights Reserved</a>
+  <div id="contact">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <a class="text-white" href="#" style="text-decoration: none;">© 2023 Hamzah Ash, All Rights Reserved</a>
+    </div>
   </div>
-</div>
   <!-- Copyright -->
-</footer>
+  </footer>
 <!-- /Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
