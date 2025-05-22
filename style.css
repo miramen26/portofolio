@@ -1,8 +1,22 @@
 /*Punya Familly417*/
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  word-wrap: break-word;
+}
+
 section {
   padding-top: 6rem;
 }
 #welcome-screen {
+  position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(44, 62, 80, 1.4); /* Semi-transparent dark background */
   z-index: 1050; /* above everything */
@@ -13,16 +27,15 @@ section {
 }
 /* Efek Glassmorphism Navbar */
 .glass-navbar {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(26, 26, 64, 0.3)); !important /* Gradien transparan */
-  backdrop-filter: blur(10px); /* Efek kaca buram */
-  -webkit-backdrop-filter: blur(10px); /* Efek kaca buram untuk Safari */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Garis bawah tipis */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(26, 26, 64, 0.3)) !important; /* Gradien transparan */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .jumbotron {
   padding-top: 5rem;
   background-color: #0c002e;
-
 }
 
 #projects {
