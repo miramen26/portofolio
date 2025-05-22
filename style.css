@@ -2,7 +2,16 @@
 section {
   padding-top: 6rem;
 }
-
+#welcome-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44, 62, 80, 1.4); /* Semi-transparent dark background */
+  z-index: 1050; /* above everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.8s ease;
+}
 /* Efek Glassmorphism Navbar */
 .glass-navbar {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(26, 26, 64, 0.3)); !important /* Gradien transparan */
@@ -14,7 +23,7 @@ section {
 .jumbotron {
   padding-top: 5rem;
   background-color: #0c002e;
-  background-image: url(img/);
+
 }
 
 #projects {
